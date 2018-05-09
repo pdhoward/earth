@@ -1,15 +1,18 @@
 
 
 Earth - Places Visited
+---
 
 [![Screenshot](screenshot.png)](https://cheeaun.earth/)
 
 Objective
+---
 
 This open source project from Lim Chee Aun demonstrates the use of mapbox, Foursquare and Serve -- operating in concert to present a complex visual experience through a simple server
 
 
-To get started -
+Get started -
+---
 
 1. clone to desktop
 2. npm install
