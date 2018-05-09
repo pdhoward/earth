@@ -1,48 +1,20 @@
 
-===
-https://github.com/cheeaun/earth
-includes a demo
 
-> A map of places I've checked in on Earth.
+Earth - Places Visited
 
 [![Screenshot](screenshot.png)](https://cheeaun.earth/)
 
-Why
----
+Objective
 
-- I want to plot all the places I've been to on a map.
-- I want a digital version of push pins on a physical map.
-- I want to show people where I've been to.
-- I want to see where I haven't been to.
-- I want to try [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/).
-- I like the cool maps from [Gyroscope](https://gyrosco.pe/).
-- I need an excuse to get a `.earth` TLD, inspired by [Conquer Earth](https://conquer.earth/). (I already have [`.life`](http://cheeaun.life/))
+This open source project from Lim Chee Aun demonstrates the use of mapbox, Foursquare and Serve -- operating in concert to present a complex visual experience through a simple server
 
-Development
----
 
-### First steps
+To get started -
 
-1. [Generate access token](https://developer.foursquare.com/overview/auth) from Foursquare (requires your own CLIENT ID, etc; figure it out on your own).
-2. Create `.env` file, with environment-specific variables on new lines:
-
-```
-ACCESS_TOKEN=XXX
-```
-
-### Wonderful `yarn` scripts
-
-- `yarn checkins` - Fetch all checks-ins from Foursquare. Raw `checkins.json` is not part of repo because of privacy. `checkins[.min].geojson` files have *shortened* coordinates for privacy.
-- `yarn countries`
-  - Remember to [install SVGO first](https://github.com/svg/svgo) (globally) before running this.
-  - Download a copy of country maps from [Sn3b/mapsicon](https://github.com/Sn3b/mapsicon) (Uses [napa](https://github.com/shama/napa) because it doesn't have a `package.json`). Then generate all optimized SVG countries.
-- `yarn start` - Watch and transpile `assets/app.raw.js`, and start the server.
-
-Future
----
-
-- Make this available for other people. Self-hosted or hosted?
-- Date & time range filtering, for check-ins.
+1. clone to desktop
+2. npm install
+3. npm run server
+4. point browser to localhost:5000
 
 Related
 ---

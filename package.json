@@ -1,5 +1,5 @@
 {
-  "name": "cheeaun-earth",
+  "name": "earth",
   "version": "0.0.1",
   "author": "Lim Chee Aun",
   "license": "MIT",
@@ -11,9 +11,10 @@
     "got": "^7.0.0",
     "napa": "^3.0.0",
     "paper": "^0.11.4",
-    "serve": "^5.2.4"
+    "serve": "^6.5.6"
   },
   "scripts": {
+    "server": "serve",
     "start": "yarn js | serve",
     "js": "babel assets/app.raw.js --watch --presets=env,babili --out-file assets/app.js --source-maps",
     "mapsicon": "if [ ! -d \"node_modules/mapsicon\" ]; then napa Sn3b/mapsicon; fi",
